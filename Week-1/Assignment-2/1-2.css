@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+/* ------------------------------------------Header------------------------------------------------- */
+header{
+    height: 6%;
+    background-color:rgba(200, 221, 221, 0.9);
+    justify-content: space-between;
+}
+#Header_left{
+    justify-content: flex-start;
+}
+#Title{
+    align-items: center;
+}
+#Header_right{
+    width: 30%;
+}
+#menu{
+    width: 100%;
+    justify-content: space-around;
+}
+.menu_content{
+    display: inline;
+    align-items: center;
+}
+#logo{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* --------------------------------------------Welcome----------------------------------------------- */
+#welcome{
+    height: 20%;
+    background-color:rgb(143, 190, 232);
+    align-items:center;
+    justify-content: center; 
+}
+
+/* -------------------------------------------Main------------------------------------------------ */
+
+main{
+    height: 64%;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: flex-start; 
+    flex-direction: column;
+}
+#Section_Title{
+    height: 10%;
+    align-items: center;
+}
+#contentBox{
+    height:90%;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+.content{
+    background-color:rgb(226, 234, 188);  
+    height: 45%;
+    width: 45%;
+    text-align: center;
+}
+
+
+/* --------------------------------------------Footer----------------------------------------------- */
+footer{
+    height: 10%;
+    justify-content: center; 
+}
+#Footer_div{
+    background-color: bisque;
+    height: 50%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px; 
+    padding: 0 5px;
+}
+/* ---------------------------------------------Gerneral---------------------------------------------- */
+.flex{
+    display: flex;
+}
