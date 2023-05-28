@@ -59,7 +59,6 @@ main{
 }
 #contentBox{
     height:90%;
-    width: 80%;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items:center;
