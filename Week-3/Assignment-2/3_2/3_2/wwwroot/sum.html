@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>sum</title>
+</head>
+
+<body>
+    <input id="input" type="text" name="name" value="" />
+    <button onclick="calculate()">計算</button>
+    <label id="result"></label>
+
+    <script>
+        const result = document.getElementById("result");
+        const input = document.getElementById("input");
+
+        const calculate = () => {
+            callSum(input.value);
+        }
+        const callSum = (input) => {
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = () => {
+                result.innerHTML = xhr.responseText;
+            }
+            xhr.open('GET', '/Data?number='+input);
+            xhr.send();
+        }
+        
+    </script>
+</body>
+
+</html>
