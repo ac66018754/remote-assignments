@@ -1,0 +1,20 @@
+﻿@model _4_1.Models.AddUserViewModel
+@{
+    if (TempData["Message"] != null)
+    {
+        <script>alert('@Html.Raw(TempData["Message"])');</script>
+    }
+}
+
+
+<form method="post" action="Add">
+    <div class="mb-3">
+        <label for="" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" asp-for="Password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
